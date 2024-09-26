@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Teenage Mutant Ninja Pepe</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<style>
+			.kanit {
+				font-family: "Kanit", sans-serif;
+			}
+		</style>
+        <title>In loving memory</title>
+		<meta name="description" content="Tributes in loving memory" />
+		<meta property="og:title" content="In loving memory" />
+		<meta property="og:description" content="Tributes in loving memory" />
+		<meta
+			property="og:image"
+			content="https://tmnp.netlify.app/desk.png"
+		/>
+
+		<link rel="icon" type="image/svg+xml" href="/logo.png" />
+	</head>
+	<body>
+		<img
+			src="./desk.jpg"
+			class="fixed h-full w-full object-cover hidden md:block object-top"
+		/>
+		<img
+			src="./mobile.jpg"
+			class="fixed h-full w-full object-cover md:hidden object-top"
+		/>
+		<div
+			class="fixed bg-gradient-to-b from-transparent via-black/50 to-black/70 h-full w-full flex flex-col justify-end items-center text-white pb-10"
+		>
+        <img src="./logo.png" alt="" class="absolute h-24 object-contain top-4">
+			<h1 class="md:text-5xl text-xl font-bold kanit text-center">
+				Site Under Construction...
+			</h1>
+			<div
+				class="flex bg-green-800 rounded items-center my-4 md:my-10 overflow-clip"
+			>
+				<div class="md:py-2 py-1 px-4 text-xs md:text-lg">
+					4BNywbaRa18i...xEV4pHmKVhKpump
+				</div>
+				<button onclick="copyFunc()" class="p-4 bg-green-900">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="size-6"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"
+						/>
+					</svg>
+				</button>
+			</div>
+			<div class="flex gap-10">
+				<a
+					href="https://dexscreener.com/solana/33hnwucblcsqpwqzqk9d6exi53ser7pqz4rt9chdymba"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<img
+						src="./dex.png"
+						class="h-10 w-10 aspect-square rounded-full border-2 border-green-800 object-cover"
+						alt=""
+					/>
+				</a>
+				<a
+					href="https://x.com/ninjapepes/"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<img
+						src="./x.png"
+						class="h-10 w-10 aspect-square rounded-full border-2 border-green-800 object-cover"
+						alt=""
+					/>
+				</a>
+				<a
+					href="https://t.me/TMNPPORTAL"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<img
+						src="./tg.png"
+						class="h-10 w-10 aspect-square rounded-full border-2 border-green-800 object-cover bg-white"
+						alt=""
+					/>
+				</a>
+			</div>
+		</div>
+		<script>
+			function copyFunc() {
+				// Create a temporary input element
+				const tempInput = document.createElement("input");
+
+				// Set the value of the input element to the text you want to copy
+				tempInput.value = "4BNywbaRa18iwNxzJQWNxt3iMS4MjxEV4pHmKVhKpump";
+
+				// Append the input element to the body (it must be in the DOM to be copied)
+				document.body.appendChild(tempInput);
+
+				// Select the text in the input element
+				tempInput.select();
+				tempInput.setSelectionRange(0, 99999); // For mobile devices
+
+				// Copy the selected text to the clipboard
+				document.execCommand("copy");
+
+				// Remove the input element from the DOM
+				document.body.removeChild(tempInput);
+				Swal.fire({
+					title: "Copied to Clipboard",
+					icon: "success",
+					showConfirmButton: false,
+					timer: 3000,
+					toast: true,
+					position: "top",
+				});
+				// Optional: Notify the user that the text has been copied
+				console.log(
+					"Text copied to clipboard: 4BNywbaRa18iwNxzJQWNxt3iMS4MjxEV4pHmKVhKpump"
+				);
+			}
+		</script>
+	</body>
+</html>
